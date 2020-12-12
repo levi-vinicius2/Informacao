@@ -1,7 +1,7 @@
 function leDados (){
-    let strNome = document.getElementById('nome');
-    let strEmail = document.getElementById('ereplyto');
-    let strComentario = document.getElementById('Comentarios');
+    let strNome = document.getElementsByName('nome');
+    let strEmail = document.getElementsByName('email');
+    let strComentario = document.getElementsByName('Comentarios');
     let info = JSON.parse(localStorage.getItem('db'))
     if (info == null)
     {
